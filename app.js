@@ -9,7 +9,17 @@ var usersRouter = require('./routes/users');
 var settings = require('./settings');
 var flash = require('connect-flash');
 
+var multer  = require('multer');
+
 var app = express();
+
+// 文件上传
+app.use(multer({
+    dest: './public/images',
+    rename: function (fieldname, filename) {
+        return filename;
+    }
+}));
 
 // express 也提供了会话中间件,把会话信息存储在数据库中，便于持久维护
 var session = require('express-session');

@@ -11,6 +11,12 @@ adminMongo： https://adminmongo.markmoffat.com/docs/#Setting%20a%20context%20pa
 ## 设计目标  
 未登录：主页左侧导航显示 home、login、register，右侧显示已发表的文章、发表日期及作者。 登陆后：主页左侧导航显示 home、post、logout，右侧显示已发表的文章、发表日期及作者。 用户登录、注册、发表成功以及登出后都返回到主页。
 
+启动：  
+adminMongo:  npm run dev  (mongodb://127.0.0.1:27017)  
+mongodb: mongod --dbpath "f:\data\db"  
+
+npm install  
+npm start
 
 链接：  
 http://wiki.jikexueyuan.com/project/express-mongodb-setup-blog/simple-blog.html
